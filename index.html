@@ -86,8 +86,8 @@
         currentRoom = name;
 
         navigator.mediaDevices
-          // .getUserMedia({ video: { facingMode: 'environment' }, audio: false })
-          .getUserMedia({video: true, audio: false})
+          .getUserMedia({ video: { facingMode: 'environment' }, audio: false })
+          // .getUserMedia({video: true, audio: false})
           .then(async (stream) => {
             clienVideo.srcObject = stream;
 
